@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HomeWork</title>
+</head>
+
+
+<body>
+
+<p>Vahan Stepanyan <span id="btn"></span></p>
+<input type="button" class="button" value="Press" onclick="myFunction()">
+<script>
+function myFunction() {
+	var a = document.getElementById("btn").innerHTML;
+	var ans;
+  switch(a){
+
+  	case "":
+  	ans = "+";
+  	break;
+
+  	case "+":
+  	ans = "-";
+  	break;
+
+  	case "-":
+  	ans = "+";
+  	break;
+  }
+  document.getElementById("btn").innerHTML = ans;
+}
+</script>
+
+</body>
+</html>
